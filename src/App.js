@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-class TodoApp extends React.Component {
+class TodoApp extends Component {
     constructor(props) {
         super(props);
         this.state = { items: [], text: '' };
@@ -51,7 +51,7 @@ class TodoApp extends React.Component {
     }
 }
 
-class TodoList extends React.Component {
+class TodoList extends Component {
     render() {
         return (
             <ul>
